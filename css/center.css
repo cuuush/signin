@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:100);
+html, html a{
+  height:100%;
+  -webkit-font-smoothing: subpixel-antialiased
+    }
+body{
+  margin:0px;
+  padding:0px;
+  height:100%;
+  width:100%;
+  background-color:#fff;
+  word-spacing:.1em;
+  letter-spacing:.06em;
+    }
+h1,h2,h3{
+  position:relative;
+    }
+h1{
+  color:black;
+  font-family:Roboto;
+  font-weight:bold;
+  font-size:8em;
+    }
+h2{
+  font-family:Roboto;
+  font-size:2.1em;
+  font-style:normal;
+    color:black;
+    }
+h3{
+  font-family:Roboto;
+  font-size:1.5em;
+  font-style:normal;
+    color:black;
+    }
+section{
+  width:100%;
+  height:100%;
+ background:url(http://www.nickbraver.com/images/anotherbg.jpg) no-repeat center;
+  background-size:cover;
+  position:relative;
+  background-clip:border-box;
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
+  display:box;
+  -webkit-box-align:center;
+  -moz-box-align:center;
+  -ms-flex-align:center;
+  -webkit-align-items:center;
+  align-items:center
+    }
+.container {
+    padding: 5vh;
+    width:40vw;
+    margin:0px auto;
+    text-align:center;
+    background-color: #09b0ee;
+    border-radius: 25px;
+}
+.center{
+  text-align:center;
+  width:auto;
+  height:auto;
+  margin:0 auto
+    }
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 0;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 9;
+    animation:fadeIn ease-in 0;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    animation-delay: 0.2;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay:0.4s;
+    animation-delay: 0.4s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.fade-in.four {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+
+
+

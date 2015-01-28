@@ -1,0 +1,188 @@
+html, html a{
+  height:100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+    }
+body {
+    font-size: 1vw;
+    font-family: 'Denmark';
+
+    margin:50px 0px; padding:0px;
+    text-align:center;
+    background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+input[type=text], input[type=password] {
+    font-size: 1.5vw;
+    height: 9vh;
+    width: 18vw;
+    -webkit-appearance: none;
+    border: 2px solid #ff007d;
+    margin-bottom: 30px;
+    color: #ff007d;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+}
+input[type=text]:focus, input[type=password]:focus {
+    box-shadow: 0px 0px 10px #ff007d;
+}
+
+.button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 7vh;
+    border: none;
+    width: 14vw;
+    font-size: 1.2vw;
+    margin: 10px;
+    background-color: #ff007d;
+    color: #fff6f6;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+.bigbutton {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 8vh;
+    border: none;
+    width: 18vw;
+    font-size: 1.2vw;
+    margin: 10px;
+    background-color: #ff007d;
+    color: #fff6f6;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+.container {
+    -webkit-box-shadow: 0px 57px 108px 12px rgba(0,0,0,0.48);
+    -moz-box-shadow: 0px 57px 108px 12px rgba(0,0,0,0.48);
+    box-shadow: 0px 57px 108px 12px rgba(0,0,0,0.48);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 5vh;
+    width:40vw;
+    margin:0px auto;
+    text-align:center;
+    background-color:#eee;
+    border-radius: 25px;
+}
+
+.errorbox {
+    padding: 5vh;
+    width:30vw;
+    margin:0px auto;
+    text-align:center;
+    background-color: #09b0ee;
+    border-radius: 25px;
+}
+
+table {
+    width: 100%;
+    border: 0px;
+}
+
+th {
+    height: 3vh;
+}
+
+td, th {
+    border: 4px solid #ff007d;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 0.5rem;
+}
+
+@font-face {
+    font-family: 'Denmark';
+    src: url('/stuff/signin/css/denmark.ttf') format('truetype');
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+.fade-in {
+    opacity:0;  /* make things invisible upon start */
+    -webkit-animation:fadeIn ease-in 0;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 9;
+    animation:fadeIn ease-in 0;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+.fade-in.one {
+    -webkit-animation-delay: 0.1s;
+    -moz-animation-delay: 0.1s;
+    animation-delay: 0.1;
+}
+
+.fade-in.two {
+    -webkit-animation-delay: 0.2s;
+    -moz-animation-delay:0.2s;
+    animation-delay: 0.2s;
+}
+
+.fade-in.three {
+    -webkit-animation-delay: 0.3s;
+    -moz-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+.fade-in.four {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.fade-in.five {
+    -webkit-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.fade-in.six {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+.fade-in.seven {
+    -webkit-animation-delay: 0.7s;
+    -moz-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+.fade-in.eight {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.fade-in.nine {
+    -webkit-animation-delay: 0.9s;
+    -moz-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+.fade-in.ten {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+

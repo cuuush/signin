@@ -1,0 +1,2 @@
+AuthName "Private team sign in"
+AuthUserFile "/home/chrisb32/.htpasswds/public_html/stuff/signin/passwd"
